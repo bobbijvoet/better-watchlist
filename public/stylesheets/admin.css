@@ -1,0 +1,20 @@
+#adsList {
+	margin-top:14px;
+}#adsList a.panel {
+	display: block;
+}
+#adsList .used {
+	display: block;
+	opacity: 0.5;
+}#adsList .used a.panel{
+	background: rgba(0,0,0,0.2);
+}
+
+#adsList a.panel:hover {
+	display: block;
+	background: rgba(0,0,0,0.2);
+}
+
+#successBox {
+	bottom: 0;
+}

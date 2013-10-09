@@ -1,0 +1,12 @@
+extends layouts/default
+
+block content
+    h1= title
+        div.row(ng-controller="ListGetter")
+            div.large-4.columns
+                h1 hello
+                img(src="http://placehold.it/400x100&text=Better%20watchlists")
+
+                form(ng-submit="submitListUrl()")
+                    input(type="text",name="imdb_list_url",value="http://www.imdb.com/list/PIca5-_2p5Q",ng-model="listUrl")
+                    input.small.button(type="submit",value="send")

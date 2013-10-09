@@ -1,0 +1,6 @@
+div.row(ng-controller="WatchlistController")
+    div.large-12.columns
+
+        div.row.movieGrid
+            div.large-2.small-6.columns.mg-item(ng-repeat="movie in movies")
+                img(src="{{movie.Poster}}")

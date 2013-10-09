@@ -1,0 +1,18 @@
+{
+  "name": "better-watchlist",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.0-rc.2",
+    "angular-route": ">=1.2.0-rc.2",
+    "ng-table": "0.2.2",
+    "foundation": "4.2.2",
+    "jquery": "1.10",
+    "modernizr": "2.6.2",
+    "underscore": "1.4.4"
+  }
+}

@@ -1,0 +1,19 @@
+!!! 5
+html(ng-app='BetterWatchList')
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/main.css')
+    body
+    a.button(href='#home') Home
+    a.button(href='#details') Details
+
+    block content
+
+p
+    | Created by
+    a(href='http://bobbijvoet.nl') Bob Bijvoet
+
+block scripts
+    include ../blocks/scripts
+
+

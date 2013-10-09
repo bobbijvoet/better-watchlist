@@ -1,0 +1,12 @@
+extends layouts/default
+
+block content
+    h1= title
+
+    div.view()
+        ng-view
+
+
+append scripts
+    script
+        var movies = JSON.parse(_.unescape("#{listString}"));

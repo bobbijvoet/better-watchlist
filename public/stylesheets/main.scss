@@ -1,0 +1,65 @@
+@import "foundation";
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.signin {
+
+}
+
+.movieTable {
+  width: 100%;
+
+  .mt-title {
+    width: 150px;
+  }
+  .mt-poster {
+    width: 20px;
+
+  }
+  .mt-year {
+    width: 80px;
+
+  }
+  .mt-poster > img {
+    width: 80px;
+  }
+
+  .mt-plot {
+    width: 580px;
+    font-style: italic;
+  }
+
+  .sortable.sort-desc:before {
+    content: "↑";
+    font-size: 26px;
+    margin-right: 6px;
+    float: left;
+
+  }
+  .sortable.sort-asc:before {
+    content: "↓";
+    font-size: 26px;
+    margin-right: 6px;
+    float: left;
+
+  }
+
+}
+
+.movieGrid {
+
+  .mg-item {
+    height:200px;
+    img {
+
+    }
+  }
+}

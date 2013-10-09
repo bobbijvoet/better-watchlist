@@ -1,0 +1,19 @@
+div.row(ng-controller="WatchlistDetailsController")
+    div.large-12
+        {{tableParams.page}}
+        a(ng-if="tableParams.page <= 1", ng-click="goToPage(page.number - 1)",href="")«
+        a(ng-if="tableParams.page >= 1", href="")»
+        table.movieTable.table(ng-table="tableParams")
+
+            tr(ng-repeat="movie in movies" )
+
+                td.mt-poster(data-title="'Poster'")
+                    img(src="{{movie.Poster}}")
+                td.mt-title(data-title="'Title'",sortable="Title")
+                    {{movie.Title}}
+                td.mt-year(data-title="'Year'",sortable="Year")
+                    {{movie.Year}}
+                td.mt-plot(data-title="'Plot'")
+                    {{movie.Plot}}
+                td(data-title="'Rating'",sortable="imdbRating")
+                    h2 {{movie.imdbRating}}
