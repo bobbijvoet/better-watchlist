@@ -5,9 +5,10 @@ var BetterWatchList = angular.module('BetterWatchList', ['ngRoute', 'ngTable'])
 				templateUrl: '/tpl/table',
 				controller: 'WatchlistDetailsController'
 			})
-			.when('/home', {
+			.when('/grid', {
 				templateUrl: '/tpl/grid',
 				controller: 'WatchlistController'
-			})
+			}).otherwise({
+				redirectTo: 'grid'});
 
 	}]);

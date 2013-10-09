@@ -1,11 +1,12 @@
 extends layouts/default
 
 block content
+    a.button(href='#home') Grid
+    a.button(href='#details') Details
     h1= title
 
     div.view()
         ng-view
-
 
 append scripts
     script

@@ -4,7 +4,7 @@ module.exports = function () {
 	return {
 		index: [
 			function (req, res, next) {
-				res.render('index', { user: req.user });
+				res.render('index', { title:'import a imdb watchlist' });
 			}],
 		tableTemplate: [
 			function (req, res, next) {

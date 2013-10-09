@@ -20,6 +20,7 @@ module.exports = function () {
 						res.redirect('/');
 					} else {
 						var list = JSON.parse(data);
+						console.log('list');
 						res.render('list', {list: list.entries, title: list.originalId, listString: JSON.stringify(list)});
 
 					}
