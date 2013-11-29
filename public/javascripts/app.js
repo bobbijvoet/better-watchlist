@@ -1,4 +1,4 @@
-var BetterWatchList = angular.module('BetterWatchList', ['ngRoute', 'ngTable'])
+var BetterWatchList = angular.module('BetterWatchList', ['ngRoute', 'ngTable','ngAnimate','ngStorage','WatchlistServices'])
 	.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider
 			.when('/details', {

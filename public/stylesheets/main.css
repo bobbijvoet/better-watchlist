@@ -2825,3 +2825,23 @@ body {
 .movieGrid .mg-item {
   height: 200px;
 }
+/* line 63, main.scss */
+.movieGrid .mg-item img {
+  transition: 1s all;
+  transform: rotateY(2deg);
+}
+/* line 70, main.scss */
+.movieGrid .mg-item.watched img {
+  opacity: 0.4;
+  transform: rotateY(60deg);
+}
+
+/* line 77, main.scss */
+.view {
+  display: block;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  overflow: hidden;
+  background: #FFF;
+}

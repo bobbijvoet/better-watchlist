@@ -58,8 +58,42 @@ body {
 
   .mg-item {
     height:200px;
-    img {
 
+    //transition: 1s all;
+    img {
+      transition: 1s all;
+      transform: rotateY(2deg);
+    }
+
+
+    &.watched {
+      img {
+        opacity: 0.4;
+        transform: rotateY(60deg);
+      }
     }
   }
 }
+.view {
+  display: block;
+  //border: 1px dashed black;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  overflow: hidden;
+  background: #FFF;
+
+
+
+}
+//.view.ng-enter {
+//  -webkit-transition: 1s;
+  //transition: 1s;
+  //opacity:0;
+//}
+
+//.view.ng-leave {
+//  -webkit-transition: 1s;
+  //transition: 1s;
+  //opacity:1;
+//}

@@ -14,10 +14,15 @@ var WatchListController = BetterWatchList.controller('WatchlistDetailsController
 	// watch for changes of parameters
 	$scope.$watch('tableParams', function (params) {
 		// slice array data on pages
-		console.log($scope);
+		console.log($scope.tableParams);
 
-		var orderedData = params.sorting ?
-			$filter('orderBy')(movies.entries, params.orderBy()) :
+
+//		var orderedData = params.sorting ?
+//			$filter('orderBy')(movies.entries, params.orderBy()) :
+//			movies.entries;
+
+		var orderedData = params.filter ?
+			$filter('filter')(movies.entries, params.filter) :
 			movies.entries;
 
 

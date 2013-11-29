@@ -1,6 +1,8 @@
 div.row(ng-controller="WatchlistController")
     div.large-12.columns
-
+        input(type="text",ng-model="$storage.test")
+        input(type="text",ng-model="query.Title")
         div.row.movieGrid
-            div.large-2.small-6.columns.mg-item(ng-repeat="movie in movies")
-                img(src="{{movie.Poster}}")
+            div.large-2.small-6.columns.mg-item(ng-repeat="movie in movies | filter:query",ng-class="{'watched': movie.watched}")
+                img(src="{{movie.Poster}}",ng-click="setWatched('{{movie.imdbID}}')")
+//                p {{movie.Title}}

@@ -1,7 +1,15 @@
-var WatchListController = BetterWatchList.controller('WatchlistController', function ($scope, $filter, ngTableParams) {
+var WatchListController = BetterWatchList.controller('WatchlistController', function ($scope, WatchlistService, $localStorage) {
 
 	console.log('go controlla');
-		$scope.movies = movies.entries;
+	$scope.$storage = $localStorage;
+
+	$scope.movies = WatchlistService.getList();
+
+
+	$scope.setWatched = function(id){
+
+		WatchlistService.setWatched(id);
+	}
 
 
 });
